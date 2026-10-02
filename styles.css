@@ -324,3 +324,18 @@ footer b{color:var(--or)}
 .bell{display:inline-block;animation:wig 1.4s infinite}
 
 .avatar img{position:absolute;inset:0;width:100%;height:100%;object-fit:cover;z-index:2}
+
+/* ===== Modo ligero para celular/tablet: sin apilado ni desenfoques (corrige recuadros negros al hacer scroll) ===== */
+@media (max-width:900px),(hover:none){
+ .panel{position:relative!important;top:auto!important;box-shadow:none;min-height:100svh}
+ .wrap{transform:none!important;opacity:1!important}
+ .card,.fc,.btn.gl,.md,.box,.tb,.pillt,nav,.links,.links.open{-webkit-backdrop-filter:none!important;backdrop-filter:none!important}
+ nav{background:rgba(12,12,12,.94)}
+ .links{background:rgba(12,12,12,.97)}
+ .md{background:rgba(0,0,0,.85)}
+ .card:before{display:none}
+ .shapes i:nth-child(1),.shapes i:nth-child(2),.shapes i:nth-child(3){animation:none}
+ .hero-phone{filter:none}
+ .rv{transform:translateY(18px)}
+}
+@media(max-width:480px){.hub{grid-template-columns:1fr 1.05fr 1fr;gap:10px 6px}.hub h3{font-size:.66rem;letter-spacing:-.02em}.hub .card{padding:10px 4px}}
