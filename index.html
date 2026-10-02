@@ -1,0 +1,342 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Estratega Digital & Creativa · Propuesta Dropi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:wght@400;600;800&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
+</head>
+<body>
+
+<!-- Iconos. Uso: <svg class="ic"><use href="#i-spark"/></svg> -->
+<svg width="0" height="0" style="position:absolute" aria-hidden="true">
+<symbol id="i-spark" viewBox="0 0 24 24"><path d="M12 3v4M12 17v4M3 12h4M17 12h4M6 6l2.5 2.5M15.5 15.5L18 18M18 6l-2.5 2.5M8.5 15.5L6 18"/></symbol>
+<symbol id="i-target" viewBox="0 0 24 24"><circle cx="12" cy="12" r="8"/><circle cx="12" cy="12" r="4"/><circle cx="12" cy="12" r=".6"/></symbol>
+<symbol id="i-link" viewBox="0 0 24 24"><path d="M10 14a4 4 0 005.7 0l3-3a4 4 0 00-5.7-5.7l-1 1M14 10a4 4 0 00-5.7 0l-3 3a4 4 0 005.7 5.7l1-1"/></symbol>
+<symbol id="i-loop" viewBox="0 0 24 24"><path d="M20 12a8 8 0 11-2.4-5.7M20 4v4h-4"/></symbol>
+<symbol id="i-chart" viewBox="0 0 24 24"><path d="M4 20V4M4 20h16M8 16v-4M12 16V8M16 16v-6"/></symbol>
+<symbol id="i-box" viewBox="0 0 24 24"><path d="M3 7l9-4 9 4v10l-9 4-9-4zM3 7l9 4 9-4M12 11v10"/></symbol>
+<symbol id="i-truck" viewBox="0 0 24 24"><path d="M2 6h12v10H2zM14 10h4l3 3v3h-7"/><circle cx="6" cy="18" r="2"/><circle cx="17" cy="18" r="2"/></symbol>
+<symbol id="i-users" viewBox="0 0 24 24"><circle cx="9" cy="8" r="3"/><path d="M3 20a6 6 0 0112 0"/><circle cx="17" cy="9" r="2.5"/><path d="M16 14a5 5 0 015 5"/></symbol>
+<symbol id="i-play" viewBox="0 0 24 24"><path d="M8 5v14l11-7z"/></symbol>
+<symbol id="i-reel" viewBox="0 0 24 24"><rect x="3" y="4" width="18" height="16" rx="3"/><path d="M3 9h18M8 4l3 5M14 4l3 5M10.5 12.5v4l4-2z"/></symbol>
+<symbol id="i-book" viewBox="0 0 24 24"><path d="M4 5a2 2 0 012-2h13v16H6a2 2 0 00-2 2zM4 19V5"/></symbol>
+<symbol id="i-mail" viewBox="0 0 24 24"><rect x="3" y="5" width="18" height="14" rx="2"/><path d="M3 7l9 6 9-6"/></symbol>
+<symbol id="i-bolt" viewBox="0 0 24 24"><path d="M13 2L5 14h6l-1 8 8-12h-6z"/></symbol>
+<symbol id="i-search" viewBox="0 0 24 24"><circle cx="11" cy="11" r="6"/><path d="M20 20l-4-4"/></symbol>
+<symbol id="i-pen" viewBox="0 0 24 24"><path d="M4 20l4-1 11-11-3-3L5 16zM14 6l3 3"/></symbol>
+<symbol id="i-chat" viewBox="0 0 24 24"><path d="M4 5h16v11H9l-5 4z"/></symbol>
+<symbol id="i-flag" viewBox="0 0 24 24"><path d="M5 21V4M5 4h11l-2 4 2 4H5"/></symbol>
+<symbol id="i-cart" viewBox="0 0 24 24"><path d="M3 4h3l2 11h10l2-8H7"/><circle cx="9" cy="19" r="1.5"/><circle cx="17" cy="19" r="1.5"/></symbol>
+<symbol id="i-doc" viewBox="0 0 24 24"><path d="M6 3h8l4 4v14H6zM14 3v4h4M9 12h6M9 16h6"/></symbol>
+</svg>
+
+<div class="bar" id="bar"></div><div id="cur"></div><div id="tt" role="tooltip"></div>
+
+<nav id="nav">
+  <a class="logo" href="#inicio">LF<b>.</b>Pérez</a>
+  <div class="links" id="links">
+    <a href="#hacer">Qué hago</a><a href="#rol">Rol</a><a href="#trabajo">Cómo trabajo</a><a href="#mcp">Caso MCP</a><a href="#crono">Cronopost</a><a href="#academy">Academy</a><a href="#uso">Cómo la usaría</a><a href="#kpis">KPIs</a>
+  </div>
+  <a class="cta" href="#cierre">Hablemos</a>
+  <button class="burger" id="bg" aria-label="Abrir menú">☰</button>
+</nav>
+
+<main>
+
+<!-- 01 · PORTADA (negro + figuras + cinta) -->
+<section class="panel p-dark hero" id="inicio">
+  <div class="shapes"><i></i><i></i><i></i><i></i></div>
+  <div class="wrap">
+    <span class="tag rv">Propuesta de rol · Growth</span><br>
+    <div class="hh rv">
+      <h1>Estrategia que<br><span class="hl">crece</span> con IA</h1>
+      <span class="cl l">Contenido</span><span class="cl r">Negocio</span>
+    </div>
+    <p class="sub rv">Estratega Digital & Creativa. Conecto contenido, plataforma y negocio para convertir comunicación en crecimiento.</p>
+    <div class="rv"><a class="btn" href="#hacer" data-go="hacer">Ver propuesta</a> <a class="btn gl" href="#uso" data-go="uso">Cómo la usaría</a></div>
+    <p class="rv" style="margin-top:14px;font-size:.85rem;color:var(--mu)">Luisa Fernanda Pérez Selada · Octubre 2026</p>
+    <div class="stage rv">
+      <img class="hero-phone" src="assets/img/celular.png" alt="Home de Dropi en un celular naranja">
+      <div class="card fl a"><svg class="ic" style="margin-bottom:4px"><use href="#i-bolt"/></svg><h3>Activación MCP</h3><div class="meter"><i style="--w:80%"></i></div><small>Conexión → primera consulta</small></div>
+      <div class="card fl b"><small>Medir → Escalar (ilustrativo)</small><svg class="spark" viewBox="0 0 120 40"><path pathLength="1" d="M2 34 C20 34 22 18 40 22 S62 30 78 16 S100 8 118 4"/></svg></div>
+    </div>
+  </div>
+  <div class="ribbon"><div><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span></div></div>
+</section>
+
+<!-- 02 · QUÉ HAGO (bento) -->
+<section class="panel p-cream" id="hacer"><div class="wrap">
+  <span class="tag rv">Qué hago</span>
+  <h2 class="rv">Estrategia con <em>intención</em>, de la idea al resultado</h2>
+  <div class="bento">
+    <div class="card tall rv"><svg class="ic"><use href="#i-target"/></svg><h3>Lo que hago</h3><p>Convierto objetivos de negocio en campañas, contenidos y journeys medibles.</p>
+      <div class="puzzle" aria-hidden="true">
+        <div class="pz p1"><svg class="ic"><use href="#i-pen"/></svg>Creatividad</div>
+        <div class="pz p2"><svg class="ic"><use href="#i-chat"/></svg>Comunicaciones</div>
+        <div class="pz p3"><svg class="ic"><use href="#i-users"/></svg>Eventos</div>
+        <div class="pz p4"><svg class="ic"><use href="#i-box"/></svg>Producto</div>
+      </div><small style="display:block;margin-top:12px;opacity:.7">Cuatro áreas, una sola estrategia: las piezas encajan.</small></div>
+    <div class="card or stat rv"><span class="n">5</span><small>etapas del journey, de expectativa a recomendación</small></div>
+    <div class="card tall rv"><span class="chip">Todo empieza con un insight</span>
+      <div class="climb" id="climb">
+        <img class="bot" src="assets/img/robot.png" alt="" aria-hidden="true">
+        <button class="pillt stp" style="--i:0" data-tip="<b>Insight</b> · lo que la gente realmente hace y necesita.">Insight</button>
+        <button class="pillt stp" style="--i:1" data-tip="<b>Estrategia</b> · qué decir, a quién y por qué canal.">Estrategia</button>
+        <button class="pillt stp" style="--i:2" data-tip="<b>Ejecución</b> · campañas, piezas y activaciones con las áreas.">Ejecución</button>
+        <button class="pillt stp" style="--i:3" data-tip="<b>Medición</b> · KPIs ligados a una acción, no solo a vistas.">Medición</button>
+        <button class="pillt stp" style="--i:4" data-tip="<b>Optimización</b> · qué escalar, qué ajustar y qué dejar de hacer.">Optimización</button>
+      </div></div>
+    <div class="card dk stat rv"><span class="n">4</span><small>áreas conectadas: Creatividad, Comunicaciones, Eventos y Producto</small></div>
+  </div>
+</div></section>
+
+<!-- 03 · EL ROL -->
+<section class="panel p-dark" id="rol"><div class="shapes"><i></i><i></i><i></i><i></i></div><div class="wrap">
+  <span class="tag rv">El rol</span>
+  <h2 class="rv">Estratega Digital & Creativa: función <em>transversal</em> dentro de Growth</h2>
+  <div class="grid">
+    <div class="card rv"><svg class="ic"><use href="#i-search"/></svg><h3>Detectar</h3><p><span class="tip" data-tip="Qué dicen las métricas de redes, plataforma y CRM.">Datos</span> · <span class="tip" data-tip="Qué formatos y temas funcionan ahora.">tendencias</span> · <span class="tip" data-tip="Cómo usa la gente la plataforma realmente.">comportamiento</span> · <span class="tip" data-tip="Huecos donde Dropi puede crecer.">oportunidades</span></p></div>
+    <div class="card rv"><svg class="ic"><use href="#i-pen"/></svg><h3>Diseñar</h3><p><span class="tip" data-tip="Concepto, narrativa y canales en un solo plan.">Campañas</span> · <span class="tip" data-tip="Historias que explican lo complejo de forma humana.">storytelling</span> · <span class="tip" data-tip="El camino del usuario, de conocer a recomendar.">journeys</span></p></div>
+    <div class="card rv"><svg class="ic"><use href="#i-link"/></svg><h3>Conectar</h3><p>Growth · Creatividad · Comunicaciones · Eventos · Producto</p></div>
+    <div class="card rv"><svg class="ic sp"><use href="#i-loop"/></svg><h3>Optimizar</h3><p><span class="tip" data-tip="Indicadores ligados a una acción, no solo a vistas.">KPIs</span> · aprendizajes · <span class="tip" data-tip="Probar, medir y decidir qué escalar.">experimentación</span></p></div>
+  </div>
+  <p class="quote rv">Entender por qué hacer cada contenido, para quién, dónde y qué debería generar.</p>
+</div></section>
+
+<!-- 04 · CÓMO TRABAJO + ENTREGABLES -->
+<section class="panel p-cream" id="trabajo"><div class="wrap">
+  <span class="tag rv">Cómo trabajo</span>
+  <h2 class="rv">De la idea a la mejora, en <em>ciclos</em></h2>
+  <div class="flow rv" data-cycle><span>Insight</span><i>→</i><span>Estrategia</span><i>→</i><span>Ejecución</span><i>→</i><span>Medición</span><i>→</i><span>Optimización</span></div>
+  <div class="card rv" data-tabs>
+    <div class="tabs"><button class="tb">Trimestral</button><button class="tb">Mensual</button><button class="tb">Semanal</button></div>
+    <div class="pn"><h3>Roadmap estratégico</h3><p>Campañas prioritarias, objetivos, audiencias, canales y KPIs.</p></div>
+    <div class="pn"><h3>Plan de acción</h3><p>Campañas activas, contenidos, experimentos y resultados.</p></div>
+    <div class="pn"><h3>Optimización</h3><p>Análisis, ajustes y nuevas oportunidades.</p></div>
+  </div>
+  <h2 class="rv" style="margin-top:44px;font-size:clamp(1.4rem,3vw,2rem)">Qué entrego <small style="font-size:.8rem;font-weight:400;color:var(--mu)">(toca cada uno)</small></h2>
+  <div class="rv">
+    <button class="pillt" data-tip="<b>Roadmap</b> · qué vamos a comunicar y por qué.">Roadmap</button>
+    <button class="pillt" data-tip="<b>Campañas</b> · concepto, narrativa, journey y canales.">Campañas</button>
+    <button class="pillt" data-tip="<b>Briefs</b> · dirección para Creatividad, Comunicaciones, Eventos y Producto.">Briefs</button>
+    <button class="pillt" data-tip="<b>Dashboard</b> · KPIs, aprendizajes y oportunidades.">Dashboard</button>
+    <button class="pillt" data-tip="<b>Optimización</b> · qué escalar, qué modificar y qué dejar de hacer.">Optimización</button>
+  </div>
+</div></section>
+
+<!-- 05 · COLABORACIÓN -->
+<section class="panel p-or" id="colab"><div class="wrap">
+  <span class="tag rv">Modelo de colaboración</span>
+  <h2 class="rv">Una función transversal: <em style="color:#fff">el centro que conecta</em> todas las áreas</h2>
+  <div class="org">
+    <div class="card dk top rv"><span class="chip">Liderazgo directo</span><h3>Luisa Salcedo</h3><p>Directora de Growth</p></div>
+    <div class="line"></div>
+    <div class="hub rv">
+      <svg class="wires" viewBox="0 0 100 100" preserveAspectRatio="none" aria-hidden="true"><path d="M50 50 L15 15"/><path d="M50 50 L85 15"/><path d="M50 50 L15 85"/><path d="M50 50 L85 85"/></svg>
+      <div class="card a-tl"><svg class="ic" style="color:#111"><use href="#i-pen"/></svg><h3>Creatividad</h3><p><span class="tip" data-tip="Concepto, diseño y formatos.">Concepto · diseño</span></p></div>
+      <div class="card a-tr"><svg class="ic" style="color:#111"><use href="#i-chat"/></svg><h3>Comunicaciones</h3><p><span class="tip" data-tip="Mensaje, canales y difusión.">Mensaje · canales</span></p></div>
+      <div class="card cr hubc"><svg class="ic"><use href="#i-link"/></svg><h3>Estratega Digital & Creativa</h3><p>El centro que conecta</p></div>
+      <div class="card a-bl"><svg class="ic" style="color:#111"><use href="#i-users"/></svg><h3>Eventos</h3><p><span class="tip" data-tip="Activaciones y experiencias presenciales.">Activaciones</span></p></div>
+      <div class="card a-br"><svg class="ic" style="color:#111"><use href="#i-box"/></svg><h3>Producto</h3><p><span class="tip" data-tip="Onboarding, funcionalidades y experiencia.">Onboarding</span></p></div>
+    </div>
+    <p class="quote rv" style="background:rgba(255,255,255,.35);border-color:#111">No estoy por encima de Creatividad, Comunicaciones, Eventos o Producto: estoy en el centro para conectarlas, y respondo a Luisa Salcedo.</p>
+  </div>
+</div></section>
+
+<!-- 06 · CASO MCP -->
+<section class="panel p-dark" id="mcp"><div class="shapes"><i></i><i></i><i></i><i></i></div><div class="wrap">
+  <span class="tag rv">Prueba estratégica · Caso MCP</span>
+  <h2 class="rv">De una funcionalidad a un sistema de <em>adopción</em></h2>
+  <div class="flow rv" data-cycle><span>1 · Conocer</span><i>→</i><span>2 · Probar</span><i>→</i><span>3 · Incorporar</span></div>
+  <p class="quote rv" style="margin:0 0 30px">El valor del MCP no está en que lo conozcan, sino en que lo usen.</p>
+  <h2 class="rv" style="font-size:clamp(1.4rem,3vw,2rem)">¿Qué puede hacer? <small style="font-size:.8rem;font-weight:400;color:var(--mu)">(toca cada opción)</small></h2>
+  <div class="grid">
+    <div class="card rv"><svg class="ic"><use href="#i-cart"/></svg><h3>Gestionar</h3>
+      <button class="pillt" data-tip="<b>Crear órdenes</b> desde la conversación con la IA.">Crear órdenes</button><button class="pillt" data-tip="<b>Listar órdenes</b> para verlas de un vistazo.">Listar órdenes</button><button class="pillt" data-tip="<b>Consultar estados</b> de cada pedido.">Consultar estados</button></div>
+    <div class="card rv"><svg class="ic"><use href="#i-bolt"/></svg><h3>Operar</h3>
+      <button class="pillt" data-tip="<b>Cotizar envíos</b> antes de despachar.">Cotizar envíos</button><button class="pillt" data-tip="<b>Buscar</b> en el catálogo.">Buscar en catálogo</button></div>
+    <div class="card rv"><svg class="ic"><use href="#i-truck"/></svg><h3>Logística</h3>
+      <button class="pillt" data-tip="<b>Listar ciudades</b> disponibles.">Listar ciudades</button><button class="pillt" data-tip="<b>Listar transportadores</b> disponibles.">Listar transportadores</button></div>
+    <div class="card rv"><svg class="ic"><use href="#i-users"/></svg><h3>Comprador</h3>
+      <button class="pillt" data-tip="<b>Consultar</b> la información disponible sobre el comprador.">Info del comprador</button></div>
+  </div>
+
+  <h2 class="rv" style="margin-top:50px">Campaña 360°: <em>todo en colaboración</em></h2>
+  <div class="card rv" data-tabs>
+    <div class="tabs"><button class="tb">Expectativa</button><button class="tb">Lanzamiento</button><button class="tb">Activación</button><button class="tb">Hábito</button><button class="tb">Recomendación</button></div>
+    <div class="pn"><span class="chip">1–2 semanas antes</span><p>Teasers · problemas reales · casos de uso · curiosidad · comunidad</p></div>
+    <div class="pn"><span class="chip">Semana 0</span><p>Video principal · demo · contenido educativo · activación multicanal</p></div>
+    <div class="pn"><span class="chip">Primeros días</span><p>Onboarding · tutorial · <span class="tip" data-tip="El primer resultado real del usuario con el MCP.">primera victoria</span> · primera consulta</p></div>
+    <div class="pn"><span class="chip">Semanas siguientes</span><p>Tips · automatizaciones · casos reales · email · WhatsApp</p></div>
+    <div class="pn"><span class="chip">Continuo</span><p>Historias de usuarios · apps creadas · retos · comunidad</p></div>
+    <p style="margin-top:14px;font-size:.85rem;color:var(--mu)">Con: <b>Creatividad · Comunicaciones · Eventos · Producto</b></p>
+  </div>
+</div></section>
+
+<!-- 06b · CRONOPOST -->
+<section class="panel p-or" id="crono"><div class="wrap">
+  <span class="tag rv">Cronopost · 3 semanas</span>
+  <h2 class="rv">Que el lanzamiento <em>no llegue de la nada</em>: 2 semanas de expectativa y 1 de lanzamiento</h2>
+  <div class="flow rv" data-cycle><span>Semana 1 · Intriga</span><i>→</i><span>Semana 2 · Pistas</span><i>→</i><span>Semana 3 · Revelación</span></div>
+  <div class="card rv" data-tabs>
+    <div class="tabs"><button class="tb">Semana 1 · Expectativa</button><button class="tb">Semana 2 · Expectativa</button><button class="tb">Semana 3 · Lanzamiento</button></div>
+
+    <div class="pn">
+      <span class="chip" style="background:#111">Algo se viene</span>
+      <h3>Intriga sin revelar nada</h3>
+      <div class="tl">
+        <div class="ev"><b>Lun</b><span><strong>Historia con pregunta abierta.</strong> “¿Qué le preguntarías a tu negocio si te pudiera contestar?”</span></div>
+        <div class="ev"><b>Mié</b><span><strong>Pop-up en la página de Dropi:</strong> “Algo se viene 👀” con cuenta regresiva y recordatorio.</span></div>
+        <div class="ev"><b>Vie</b><span><strong>Historia con encuesta</strong> en acento colombiano: “¿Les cuento o no les cuento?”</span></div>
+        <div class="ev"><b>Dom</b><span><strong>Reel teaser de 10 s:</strong> solo voz y silueta, sin mostrar el producto.</span></div>
+      </div>
+      <div class="why3">
+        <div><small>Por qué</small>Lanzar sin aviso obliga a competir por atención desde cero. La intriga crea memoria y separa a quienes quieren saber más.</div>
+        <div><small>Cómo se mide</small>Alcance a no seguidores · respuestas a stickers · recordatorios activados · clics y cierres del pop-up.</div>
+        <div><small>Qué lograremos</small>Una lista de interesados antes de mostrar nada y preguntas reales para escribir la semana 2.</div>
+      </div>
+      <div class="acts"><button class="btn" data-teaser="1">Ver pop-up de la semana</button><button class="btn" data-story="1">Ver historias</button></div>
+    </div>
+
+    <div class="pn">
+      <span class="chip" style="background:#111">Pistas</span>
+      <h3>Pistas del problema, no del producto</h3>
+      <div class="tl">
+        <div class="ev"><b>Lun</b><span><strong>Historia con pista 1:</strong> “Tiene que ver con IA y con sus ventas.”</span></div>
+        <div class="ev"><b>Mié</b><span><strong>El pop-up evoluciona:</strong> “Ya casi” con un rompecabezas de 3 piezas, una ya revelada.</span></div>
+        <div class="ev"><b>Vie</b><span><strong>Historia respondiendo a la comunidad:</strong> las mejores adivinanzas, sin confirmar ninguna.</span></div>
+        <div class="ev"><b>Sáb</b><span><strong>Reel Día 1 de Laura:</strong> “Necesito otro par de manos”. Cierra con “Les cuento en unos días 👀”.</span></div>
+      </div>
+      <div class="why3">
+        <div><small>Por qué</small>Las pistas desde el problema real (tiempo, pedidos, devoluciones) generan identificación. Quien se reconoce, vuelve.</div>
+        <div><small>Cómo se mide</small>Retención de historias · respuestas por mensaje directo · comentarios con intención (“¿qué es?”) · guardados y compartidos del Reel.</div>
+        <div><small>Qué lograremos</small>Conversación entre usuarios y una expectativa instalada: llegan al lanzamiento sabiendo qué problema se resuelve.</div>
+      </div>
+      <div class="acts"><button class="btn" data-teaser="2">Ver pop-up de la semana</button><button class="btn" data-story="2">Ver historias</button></div>
+    </div>
+
+    <div class="pn">
+      <span class="chip" style="background:#111">Revelación</span>
+      <h3>De mirar a usar</h3>
+      <div class="tl">
+        <div class="ev"><b>Mar</b><span><strong>Reel Día 4 de Laura</strong> (“Le pregunté a la IA”) + video principal de Dropi. El pop-up pasa a “Conoce nuestra nueva herramienta”.</span></div>
+        <div class="ev"><b>Mié</b><span><strong>Historias con tutorial rápido:</strong> “Se conecta en 3 pasos”, con enlace a Dropi Academy.</span></div>
+        <div class="ev"><b>Vie</b><span><strong>Reel Día 7 de Laura</strong> (“No se trata de hacerlo todo sola”) + correo y WhatsApp con el manual.</span></div>
+      </div>
+      <div class="why3">
+        <div><small>Por qué</small>Toda la atención acumulada se canaliza hacia una acción: usar, no solo ver. Pop-up y Academy llevan del descubrimiento a la primera consulta.</div>
+        <div><small>Cómo se mide</small>Clics del pop-up a Academy · conexiones MCP · primera consulta · tutoriales completados · apps creadas.</div>
+        <div><small>Qué lograremos</small>Pasar de “me enteré” a “ya lo conecté”: activación en los primeros días y base para el hábito.</div>
+      </div>
+      <div class="acts"><button class="btn" data-teaser="3">Ver pop-up de la semana</button><button class="btn" data-story="3">Ver historias</button></div>
+    </div>
+
+    <p style="margin-top:16px;font-size:.84rem;opacity:.8"><b>Medición común:</b> se toma una línea base antes de la semana 1 y se compara semana a semana. Las metas numéricas se definen con los datos reales de Dropi.</p>
+  </div>
+</div></section>
+
+<!-- 07 · CANALES + ACADEMY -->
+<section class="panel p-cream" id="academy"><div class="wrap">
+  <span class="tag rv">Canales · Dropi Academy</span>
+  <h2 class="rv">Los lanzamientos no terminan en Instagram: <em>viven en el home y en Academy</em></h2>
+  <div class="rv">
+    <button class="pillt" data-tip="<b>Descubrir</b> · Instagram y TikTok abren la puerta.">Social</button>
+    <button class="pillt" data-tip="<b>Entender</b> · demos, casos y explicaciones.">YouTube</button>
+    <button class="pillt" data-tip="<b>Aprender</b> · tutoriales estructurados.">Dropi Academy</button>
+    <button class="pillt" data-tip="<b>Activar</b> · la primera victoria dentro de la plataforma.">Plataforma</button>
+    <button class="pillt" data-tip="<b>Retener</b> · tips, novedades y automatizaciones.">Email / WhatsApp</button>
+    <button class="pillt" data-tip="<b>Recomendar</b> · casos, apps y experiencias.">Comunidad</button>
+  </div>
+  <div class="browser rv" style="margin-top:22px">
+    <div class="top"><i></i><i></i><i></i><small style="margin-left:10px;color:var(--mu)">Home de Dropi · maqueta</small></div>
+    <div class="banner"><span>✨ Conoce nuestra nueva herramienta</span><button class="btn" data-popup>Ver pop-up</button></div>
+    <div class="acad" id="acad" data-tabs>
+      <h3 style="margin-bottom:10px"><svg class="ic" style="width:22px;height:22px;vertical-align:-4px;margin:0 6px 0 0"><use href="#i-book"/></svg>Dropi Academy · Dropi + Claude</h3>
+      <div class="tabs"><button class="tb">1 · Video de lanzamiento</button><button class="tb">2 · Tutorial paso a paso</button><button class="tb">3 · Manual</button></div>
+      <div class="pn"><div class="anim av"><div class="playb"><svg class="ic"><use href="#i-play"/></svg></div><span class="lbl">Video de lanzamiento</span><i class="pg"></i></div><p>Primero: qué es y para qué sirve.</p></div>
+      <div class="pn"><div class="anim at"><div class="row"><div class="pz p1">1 · Conecta</div><div class="pz p2">2 · Autoriza</div><div class="pz p3">3 · Pregunta</div></div><span class="lbl ok">✓ Primera consulta lista</span></div><p>Después: conectar Dropi a Claude y hacer la primera consulta.</p></div>
+      <div class="pn"><div class="anim am"><svg class="docv" viewBox="0 0 80 100"><path d="M10 6h42l18 18v70H10z" pathLength="1"/><path d="M52 6v18h18" pathLength="1"/><path d="M22 46h36" pathLength="1"/><path d="M22 60h36" pathLength="1"/><path d="M22 74h24" pathLength="1"/></svg><span class="lbl">Manual · tu guía de consulta</span></div><p>Por último: el manual para consultar cuando lo necesites.</p></div>
+    </div>
+  </div>
+  <p class="quote rv">Cada pieza destraba una etapa del journey: descubrir → aprender → usar → descubrir más.</p>
+</div></section>
+
+<!-- 08 · CÓMO LA USARÍA (influencer) -->
+<section class="panel p-dark" id="uso"><div class="shapes"><i></i><i></i><i></i><i></i></div><div class="wrap">
+  <span class="tag rv">Cómo la usaría</span>
+  <h2 class="rv">“Emprender, pero <em>más fácil</em>”</h2>
+  <p class="rv" style="color:var(--mu);margin:-8px 0 20px;max-width:620px">Campaña de lanzamiento Dropi + Claude · TikTok + Instagram Reels · 3 videos, 1 cada 3 días · 25–40 s.</p>
+
+  <div class="infl">
+    <div class="orbit rv">
+      <div class="photo"><div class="avatar"><i></i><i></i><i></i><b>LV</b><img src="assets/img/laura.jpg" alt="Laura Vanegas" onerror="this.remove()"></div></div>
+      <button class="fc" style="top:4%;left:2%" data-tip="<b>Instagram</b><br>≈ 127.000 seguidores">Instagram <b>127K</b></button>
+      <button class="fc" style="top:14%;right:0;animation-delay:-1s" data-tip="<b>TikTok</b><br>≈ 122.600 seguidores">TikTok <b>122.6K</b></button>
+      <button class="fc" style="top:44%;left:-3%;animation-delay:-2s" data-tip="<b>Views promedio en TikTok</b><br>≈ 44.500 por video">Views <b>44.5K</b></button>
+      <button class="fc" style="top:56%;right:-3%;animation-delay:-3s" data-tip="<b>Engagement estimado en TikTok</b><br>≈ 8,47 %">Engagement <b>8,47%</b></button>
+      <button class="fc" style="bottom:6%;left:6%;animation-delay:-1.5s" data-tip="<b>Likes promedio en TikTok</b><br>≈ 3.670 por video">Likes <b>3.67K</b></button>
+      <button class="fc" style="bottom:2%;right:8%;animation-delay:-2.5s" data-tip="<b>Contenido</b><br>Lifestyle, fitness, maternidad, emprendimiento y vlogs.">Lifestyle · maternidad</button>
+    </div>
+    <div class="rv">
+      <span class="chip">Creadora seleccionada · Colombia</span>
+      <h2 style="margin-bottom:10px;font-size:clamp(1.6rem,3.6vw,2.4rem)">Laura Vanegas <em>@lauravanegasf</em></h2>
+      <p>No es una “influencer que vende Dropi”: es una <b>emprendedora y mamá</b> que descubre herramientas que le ayudan a simplificar su negocio.</p>
+      <div class="flow" data-cycle style="margin-top:16px"><span>Día 1 · Tengo mucho que hacer</span><i>→</i><span>Día 4 · Puedo apoyarme en IA</span><i>→</i><span>Día 7 · Entiendo mejor mi negocio</span></div>
+      <a class="btn" style="margin-top:18px" href="https://www.instagram.com/p/Dak5AspR7KL/" target="_blank" rel="noopener noreferrer">Revisa su perfil ↗</a>
+    </div>
+  </div>
+
+  <div class="grid">
+    <div class="card reel rv"><div class="anim a1"><div class="ring"><svg class="ic o1"><use href="#i-box"/></svg><svg class="ic o2"><use href="#i-chat"/></svg><svg class="ic o3"><use href="#i-cart"/></svg><svg class="ic o4"><use href="#i-truck"/></svg></div><svg class="ic main"><use href="#i-reel"/></svg><i class="pg"></i></div><span class="chip">Día 1 · Identificación</span><h3>Necesito otro par de manos</h3><button class="btn" data-guion="1">Ver guion</button></div>
+    <div class="card reel rv"><div class="anim a2"><div class="bub q">¿Qué productos tuvieron más devoluciones esta semana?</div><div class="bub dots"><i></i><i></i><i></i></div><div class="bub a">Aquí lo tienes 📊</div><i class="pg"></i></div><span class="chip">Día 4 · Descubrimiento</span><h3>Le pregunté a la IA</h3><button class="btn" data-guion="2">Ver guion</button></div>
+    <div class="card reel rv"><div class="anim a3"><div class="bars"><i style="--h:38%;--k:0"></i><i style="--h:55%;--k:1"></i><i style="--h:46%;--k:2"></i><i style="--h:78%;--k:3"></i><i style="--h:92%;--k:4"></i></div><span class="lbl"><svg class="ic" style="width:18px;height:18px;margin:0 4px -3px 0"><use href="#i-bolt"/></svg>Decidir más rápido</span><i class="pg"></i></div><span class="chip">Día 7 · Utilidad</span><h3>No se trata de hacerlo todo sola</h3><button class="btn" data-guion="3">Ver guion</button></div>
+  </div>
+  <p class="quote rv"><b>No:</b> “Compra Dropi.” <b>Sí:</b> “Descubrí una herramienta que me está ayudando a trabajar mejor.” La IA no reemplaza al emprendedor: le ayuda a trabajar mejor.</p>
+</div></section>
+
+<!-- 09 · KPIs + OPTIMIZACIÓN -->
+<section class="panel p-cream" id="kpis"><div class="wrap">
+  <span class="tag rv">KPIs</span>
+  <h2 class="rv">No medir cuántos vieron, sino <em>qué acción generó</em></h2>
+  <div class="grid">
+    <div class="card rv"><svg class="ic"><use href="#i-search"/></svg><h3>Alcance</h3><div class="meter"><i style="--w:55%"></i></div><p><span class="tip" data-tip="Personas que no seguían a Dropi.">No seguidores</span> · <span class="tip" data-tip="Cuánta gente busca la marca por nombre.">búsquedas de marca</span></p></div>
+    <div class="card rv"><svg class="ic"><use href="#i-chat"/></svg><h3>Interés</h3><div class="meter"><i style="--w:70%"></i></div><p>Retención · compartidos · guardados · <span class="tip" data-tip="Comentarios que muestran ganas de probar o preguntar.">comentarios con intención</span></p></div>
+    <div class="card or rv"><svg class="ic"><use href="#i-bolt"/></svg><h3>Activación</h3><div class="meter"><i style="--w:85%"></i></div><p><span class="tip" data-tip="Usuarios que logran conectar el MCP.">Conexiones MCP</span> · primera consulta · tutoriales completados</p></div>
+    <div class="card dk rv"><svg class="ic"><use href="#i-users"/></svg><h3>Retención</h3><div class="meter"><i style="--w:65%"></i></div><p>Usuarios activos · <span class="tip" data-tip="Apps que los usuarios crean con el MCP.">apps creadas</span> · referidos</p></div>
+  </div>
+  <h2 class="rv" style="margin-top:44px;font-size:clamp(1.4rem,3vw,2rem)">Ciclo de optimización</h2>
+  <div class="flow rv" data-cycle><span>Medir</span><i>→</i><span>Analizar</span><i>→</i><span>Ajustar</span><i>→</i><span>Repetir</span><i>→</i><span>Escalar</span></div>
+  <div class="rv"><span class="chip" style="background:#111">Cada semana</span> <span class="tip" data-tip="Identificar qué funciona.">qué funciona</span> · <span class="chip" style="background:#111">Cada mes</span> <span class="tip" data-tip="Documentar aprendizajes.">aprendizajes</span> · <span class="chip" style="background:#111">Cada trimestre</span> <span class="tip" data-tip="Redefinir prioridades y oportunidades.">prioridades</span></div>
+</div></section>
+
+<!-- 10 · DIFERENCIAL + CIERRE -->
+<section class="panel p-or" id="cierre"><div class="wrap">
+  <span class="tag rv">Mi diferencial</span>
+  <h2 class="rv">Conectar contenido, plataforma y negocio bajo una misma lógica</h2>
+  <div class="grid">
+    <div class="card dk rv"><svg class="ic"><use href="#i-pen"/></svg><h3>Diseño</h3><p>Pienso la experiencia completa.</p></div>
+    <div class="card dk rv"><svg class="ic"><use href="#i-cart"/></svg><h3>eCommerce</h3><p>Entiendo el negocio y el journey.</p></div>
+    <div class="card dk rv"><svg class="ic"><use href="#i-play"/></svg><h3>Contenido</h3><p>Convierto lo complejo en historias.</p></div>
+    <div class="card dk rv"><svg class="ic"><use href="#i-target"/></svg><h3>Estrategia</h3><p>Conecto objetivos, canales y resultados.</p></div>
+    <div class="card dk rv"><svg class="ic"><use href="#i-spark"/></svg><h3>IA</h3><p>Exploro nuevas formas de crear y activar.</p></div>
+  </div>
+  <h2 class="rv" style="margin:50px 0 10px;text-align:center;max-width:none">Estrategia que se convierte en acción</h2>
+  <p class="rv" style="text-align:center;font-weight:600">Growth × Creatividad × Comunicaciones × Eventos × Producto</p>
+  <p class="rv" style="text-align:center">Liderazgo directo: Luisa Salcedo · Directora de Growth</p>
+</div>
+<div class="ribbon k"><div><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span><span>Ecommerce creativo</span><span>✦</span><span>Estratégico</span><span>✦</span></div></div>
+</section>
+
+</main>
+
+<footer>© 2026 · Derechos reservados a <b>D.I. LUISA FERNANDA PÉREZ SELADA</b><br>ESP. EN ECOMMERCE Y MARKETING DIGITAL</footer>
+
+<!-- Ventana emergente (guiones y pop-up) -->
+<div class="md" id="md"><div class="box" id="mdc"></div></div>
+
+<script src="script.js"></script>
+</body>
+</html>
